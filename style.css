@@ -118,6 +118,16 @@ h1 {
   padding: 10px 15px;
   margin: 10px;
 }
-.block_title {
+.block_title_h1 {
   display: block;
+  text-align: left;
+  width: 50%;
+  margin-left: 25px;
+  min-width: 500px;
+}
+.block_title {
+  display: flex;
+  justify-content: left;
+  max-width: 1520px;
+  margin: auto;
 }
