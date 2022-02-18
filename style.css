@@ -105,3 +105,19 @@ h1 {
   background: #18a0fb;
   color: #fff;
 }
+.section_container,
+.section_container_2 {
+  display: flex;
+  max-width: 1520px;
+  height: 222px;
+  max-height: 960px;
+  margin: auto;
+}
+.block_1,
+.block_2 {
+  padding: 10px 15px;
+  margin: 10px;
+}
+.block_title {
+  display: block;
+}
