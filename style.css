@@ -1,6 +1,74 @@
+/** @format */
+
+body {
+  margin: 0;
+  background: #f2f2f2;
+}
+
+.top_header {
+  background: #fff;
+}
+
+.top_menu {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1520px;
+  padding: 0 30px;
+  height: 60px;
+}
+
+.top_menu > div {
+  display: flex;
+  align-items: center;
+}
+
+.top_menu nav {
+  display: flex;
+  margin-left: 31px;
+}
+
+.top_menu nav a,
+.btn {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+  color: #18a0fb;
+  text-decoration: none;
+}
+
+.top_menu nav a {
+  margin-left: 40px;
+}
+
+.btn {
+  border: 1px solid #18a0fb;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.btn_light {
+  background: #ffffff;
+}
+
+.btn_accent {
+  background: #18a0fb;
+  color: #fff;
+}
+
 header {
   max-width: 1680px;
-  height: 960px;
+  height: 100vh;
+  max-height: 960px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -10,6 +78,9 @@ header {
 
 .bg_header {
   background: url(/Group\ 5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 h1 {
