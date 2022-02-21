@@ -1,5 +1,4 @@
 /** @format */
-
 body {
   margin: 0;
   background: #f2f2f2;
@@ -11,7 +10,11 @@ body {
 
 .top_menu {
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   max-width: 1520px;
   padding: 0 30px;
@@ -19,11 +22,17 @@ body {
 }
 
 .top_menu > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .top_menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 31px;
 }
@@ -45,12 +54,19 @@ body {
 
 .btn {
   border: 1px solid #18a0fb;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 6px;
   width: 130px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-left: 12px;
   cursor: pointer;
@@ -69,15 +85,32 @@ body {
   background: #18a0fb;
   color: #fff;
 }
-
+.btn_light:hover {
+  background: #ececec;
+}
+.btn_accent:hover {
+  background: #158fe0;
+}
+nav > a:hover {
+  color: #095588;
+}
 header {
   max-width: 1680px;
   height: 100vh;
   max-height: 960px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -105,29 +138,141 @@ h1 {
   background: #18a0fb;
   color: #fff;
 }
+.section_1 {
+  padding-bottom: 100px;
+  flex-wrap: wrap;
+}
+.section_2,
+.section_3 {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
 .section_container,
 .section_container_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-width: 1520px;
-  height: 222px;
+  width: 100%;
+  min-height: 222px;
+  flex-wrap: wrap;
   max-height: 960px;
+  min-width: 320px;
   margin: auto;
+  justify-content: center;
+  box-sizing: border-box;
 }
-.block_1,
+
+.block_1 {
+  width: 686px;
+  box-sizing: border-box;
+  margin-right: 70px;
+}
 .block_2 {
-  padding: 10px 15px;
-  margin: 10px;
+  margin-left: 70px;
+  width: 686px;
+  box-sizing: border-box;
 }
+
 .block_title_h1 {
   display: block;
   text-align: left;
   width: 50%;
   margin-left: 25px;
   min-width: 500px;
+  margin-top: 120px;
 }
+
 .block_title {
   display: flex;
   justify-content: left;
   max-width: 1520px;
   margin: auto;
 }
+.section_2 img {
+  width: 750px;
+  height: 440px;
+}
+.section_2,
+.section_3 {
+  align-items: center;
+  display: flex;
+  justify-content: left;
+  max-width: 1520px;
+  margin: auto;
+}
+.section_2 .block_2 {
+  padding-left: 10px;
+}
+p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  letter-spacing: -0.015em;
+}
+h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.block_list_1 img,
+.block_list_2 img {
+  width: 176px;
+  height: 76px;
+  margin: 32px;
+}
+.section_4 {
+  text-align: center;
+  height: 738px;
+  max-width: 1520px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 1px;
+}
+.section_4_block_conteiner {
+  height: 480px;
+  margin: 120px 0;
+  padding: 1px;
+}
+.section_4 p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 50px;
+  /* or 167% */
+
+  letter-spacing: -0.015em;
+}
+.section_5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 340px;
+}
+.section_5_block {
+  display: flex;
+}
+.section_5 h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 50px;
+  max-width: 940px;
+  /* or 167% */
+
+  letter-spacing: -0.015em;
+}
+.section_5_block {
+  padding-left: 40px;
+}
+/*# sourceMappingURL=style.css.map */
