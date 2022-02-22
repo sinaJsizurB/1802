@@ -11,10 +11,6 @@
 $font_size: 15;
 $font_size_h1: $font_size * 3 + 0px;
 
-@function toEm($px_size, $font_size) {
-  @return $px_size/$font_size + 0em;
-}
-
 body {
   margin: 0;
   background: #f2f2f2;
@@ -54,14 +50,11 @@ body {
       font-family: Montserrat;
       font-weight: 500;
       font-size: $font_size + 0px;
-      line-height: toEm(18, $font_size);
+      line-height: 18px;
       letter-spacing: -0.015em;
       color: #18a0fb;
       text-decoration: none;
       margin-left: 40px;
-    }
-    > a:hover {
-      color: #095588;
     }
   }
 }
@@ -70,14 +63,14 @@ body {
   font-family: Montserrat;
   font-weight: 500;
   font-size: $font_size + 0px;
-  line-height: toEm(18, $font_size);
+  line-height: 18px;
   letter-spacing: -0.015em;
   color: #18a0fb;
   text-decoration: none;
   border: 1px solid #18a0fb;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border-radius: toEm(6, $font_size);
+  border-radius: 6px;
   width: 130px;
   height: 40px;
   display: -webkit-box;
@@ -91,26 +84,29 @@ body {
   justify-content: center;
   margin-left: 12px;
   cursor: pointer;
+}
 
-  &_call_to_action {
-    width: 192px;
-    height: 52px;
-  }
+.btn_call_to_action {
+  width: 192px;
+  height: 52px;
+}
 
-  &_light {
-    background: #ffffff;
-  }
+.btn_light {
+  background: #ffffff;
+}
 
-  &_accent {
-    background: #18a0fb;
-    color: #fff;
-  }
-  &_light:hover {
-    background: #ececec;
-  }
-  &_accent:hover {
-    background: #158fe0;
-  }
+.btn_accent {
+  background: #18a0fb;
+  color: #fff;
+}
+.btn_light:hover {
+  background: #ececec;
+}
+.btn_accent:hover {
+  background: #158fe0;
+}
+nav > a:hover {
+  color: #095588;
 }
 header {
   max-width: 1680px;
@@ -132,27 +128,25 @@ header {
   justify-content: center;
 }
 .bg_header {
-  background: url(/HTML_CSS/Group5.png);
+  background: url(/Group5.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-  h1 {
-    font-family: Montserrat;
-    font-size: $font_size_h1;
-    line-height: toEm(80, $font_size);
-    text-align: center;
-    letter-spacing: -0.015em;
-    color: #000000;
-    font-style: normal;
-    font-weight: normal;
-    line-height: toEm(56, $font_size);
-  }
-  .bg_header__title {
-    margin-top: 390px;
-  }
 }
-
+h1 {
+  font-family: Montserrat;
+  font-size: $font_size_h1;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #000000;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 56px;
+}
+.bg_header__title {
+  margin-top: 390px;
+}
 .section_1 {
   padding-bottom: 100px;
   flex-wrap: wrap;
@@ -224,8 +218,8 @@ p {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: $font_size;
-  line-height: toEm(18, $font_size);
+  font-size: 18px;
+  line-height: 30px;
   /* or 167% */
 
   letter-spacing: -0.015em;
@@ -244,42 +238,43 @@ p {
   margin: auto;
   box-sizing: border-box;
   padding: 1px;
+}
+.section_4_block_conteiner {
+  height: 480px;
+  margin: 120px 0;
+  padding: 1px;
+}
+.section_4 p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 50px;
+  /* or 167% */
 
-  .section_4_block_conteiner {
-    height: 480px;
-    margin: 120px 0;
-    padding: 1px;
-  }
-  .section_4 p {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: toEm(40, $font_size);
-    line-height: toEm(50, $font_size);
-    /* or 167% */
-    letter-spacing: -0.015em;
-  }
+  letter-spacing: -0.015em;
 }
 .section_5 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 340px;
-  .section_5_block {
-    display: flex;
-  }
-  .section_5 h3 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: toEm(36, $font_size);
-    line-height: toEm(50, $font_size);
-    max-width: 940px;
-    /* or 167% */
-    letter-spacing: -0.015em;
-  }
-  .section_5_block {
-    padding-left: 40px;
-  }
+}
+.section_5_block {
+  display: flex;
+}
+.section_5 h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 50px;
+  max-width: 940px;
+  /* or 167% */
+
+  letter-spacing: -0.015em;
+}
+.section_5_block {
+  padding-left: 40px;
 }
 /*# sourceMappingURL=style.css.map */
